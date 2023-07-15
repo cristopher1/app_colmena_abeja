@@ -1,0 +1,6 @@
+[submodule "api_colmena_abeja"]
+	path = api_colmena_abeja
+	url = git@github.com:cristopher1/api_colmena_abeja.git
+[submodule "frontend_app_colmena_abeja"]
+	path = frontend_app_colmena_abeja
+	url = git@github.com:cristopher1/frontend_app_colmena_abeja.git
