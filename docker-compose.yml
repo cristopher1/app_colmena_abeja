@@ -1,0 +1,20 @@
+version: '3.4'
+
+services:
+  frontend:
+    build:
+      context: ${FRONTEND_PROJECT_DIRECTORY}
+      target: ${FRONTEND_STAGE}
+    env_file:
+      - ${FRONTEND_PROJECT_DIRECTORY}/.env
+    ports:
+      - "${FRONTEND_HOST_PORT}:${FRONTEND_CONTAINER_PORT}"
+  api:
+    build:
+      context: ${API_PROJECT_DIRECTORY}
+      target: ${API_STAGE}
+    env_file:
+      - ${API_PROJECT_DIRECTORY}/api/.env
+    ports:
+      - "${API_HOST_PORT}:${API_CONTAINER_PORT}"
+      
