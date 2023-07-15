@@ -7,6 +7,8 @@ services:
       target: ${FRONTEND_STAGE}
     env_file:
       - ${FRONTEND_PROJECT_DIRECTORY}/.env
+    environment:
+      - VUE_APP_PORT=${API_HOST_PORT}
     ports:
       - "${FRONTEND_HOST_PORT}:${FRONTEND_CONTAINER_PORT}"
   api:
