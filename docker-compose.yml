@@ -8,7 +8,7 @@ services:
     env_file:
       - ${FRONTEND_PROJECT_DIRECTORY}/.env
     environment:
-      - VUE_APP_PORT=${API_HOST_PORT}
+      - VUE_APP_API_PORT=${API_HOST_PORT}
     ports:
       - "${FRONTEND_HOST_PORT}:${FRONTEND_CONTAINER_PORT}"
   api:
@@ -19,4 +19,3 @@ services:
       - ${API_PROJECT_DIRECTORY}/api/.env
     ports:
       - "${API_HOST_PORT}:${API_CONTAINER_PORT}"
-      
