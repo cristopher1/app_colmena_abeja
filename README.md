@@ -81,14 +81,13 @@ Para ejecutar la aplicación siga los siguientes pasos.
 * **Nota: A partir de la versión 23.0 de Docker Desktop y Docker Engine se usa de forma predeterminada el BuildKit**
 **por lo que no es necesario habilitarlo de forma manual.**
 
-1. Ingrese a la carpeta app_colmena_abeja.
-2. Cree un archivo llamado .env (en la misma carpeta donde esta el archivo .env.example)
+1. Ingrese a la carpeta app_colmena_abeja (desde la terminal o interfaz gráfica)
+2. Cree un archivo llamado .env (en la misma carpeta donde esta el archivo .env.example)  
 3. Copie el contenido del archivo .env.example a .env
 4. Si gusta, modifique los valores del archivo .env
 5. Repita el paso 2, 3 y 4 en api_colmena_abeja y frontend_app_colmena_abeja
-6. Abra una terminal
-7. Desde la terminal, ingrese a la carpeta app_colmena_abeja
-8. Ejecute el comando `docker-compose up --build`
+6. Abra una terminal e ingrese a la carpeta app_colmena_abeja
+7. Ejecute el comando `docker-compose up --build`
 
 **Nota: En modo producción no exponga directamente el contenedor api_colmena_abeja, en su lugar use un servidor de producción como nginx para redirigir**
 **las peticiones web al contenedor api_colmena_abeja.**
