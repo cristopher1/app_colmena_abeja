@@ -14,7 +14,7 @@ El presente proyecto fue desarrollado durante el ramo **trabajo de titulo**, par
 
 ## [Introducción](#introduccion)
 
-<p text-aling="justify">
+<p style="{ text-aling: justify }">
 El presente repositorio tiene como finalidad almacenar las herramientas que permiten automzatizar el
 despliegue del sistema. El sistema se divide en un frontend y una API (almacenadas en repositorios independientes)
 y unidas en un tercer repositorio (este repositorio) mediante gitsubmodule, que además de juntar los dos
