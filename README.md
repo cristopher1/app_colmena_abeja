@@ -2,7 +2,7 @@
 
 ## Índice
 
-### [1. Introducción](#introducción)
+### [1. Introducción](#introduccion)
 
 ### [2. Prerrequisitos]
 
@@ -16,7 +16,7 @@
 
 ### [5. Ejecutar la aplicación]
 
-## 1. Introducción
+## <a id="introduccion"></a>1. Introducción
 
 El presente proyecto fue desarrollado durante trabajo de titulo de ingeniería civil informática.
 
