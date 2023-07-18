@@ -1,7 +1,6 @@
 # [APP COLMENA ABEJA](#indice)
 
-<a id="indice"></a>
-### Índice
+### <a id="indice"></a>Índice
 
 * <a id="introduccion"></a>[Introducción](#Introducción)
 * <a id="prerrequisitos"></a> [Prerrequisitos](#Prerrequisitos)
@@ -9,7 +8,7 @@
 * <a id="entorno"></a>[Variables de entorno](#Variables-de-entorno)
   * <a id="entorno-frontend"></a>[Para el FRONTEND](#Para-el-FRONTEND)
   * <a id="entorno-api"></a>[Para la API](#Para-la-API)
-* <a id="run></a>[Ejecutar la aplicación](#Ejecutar-la-aplicación)
+* <a id="run"></a>[Ejecutar la aplicación](#Ejecutar-la-aplicación)
 
 ## [Introducción](#introduccion)
 
