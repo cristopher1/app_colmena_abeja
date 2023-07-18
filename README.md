@@ -16,7 +16,7 @@
 
 ### [5. Ejecutar la aplicación](#run)
 
-## {#introduccion}1. Introducción
+## 1. Introducción {#introduccion}
 
 El presente proyecto fue desarrollado durante trabajo de titulo de ingeniería civil informática.
 
