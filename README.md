@@ -1,6 +1,9 @@
 # [APP COLMENA ABEJA](#indice)
 
-El presente proyecto fue desarrollado durante el ramo **trabajo de titulo**, para optar al titulo de **ingenierío civil informático** en la Universidad Técnica Federico Santa María (UTFSM).
+El presente proyecto fue desarrollado durante el ramo **trabajo de titulo**, para optar al titulo de **ingenierío civil informático** en la Universidad Técnica
+Federico Santa María (UTFSM). Este sistema busca detectar la presencia o ausencia de abeja reina dentro de una colmena, mediante la extracción de características
+de los zumbidos emitidos por ella, los cuales serán procesados por una red neuronal convolucional (CNN), para finalmente indicar si existe la presencia de abeja
+reina dentro de dicha colmena.
 
 ### <a id="indice"></a>Índice
 
