@@ -4,19 +4,19 @@
 
 ### [1. Introducción](#introduccion)
 
-### [2. Prerrequisitos]
+### [2. Prerrequisitos](#prerrequisitos)
 
-### [3. Descargar el repositorio]
+### [3. Descargar el repositorio](#descarga)
 
-### [4. Variables de entorno]
+### [4. Variables de entorno](#entorno)
 
-#### [4.1]
+ * ### [4.1 Para el FRONTEND](#entorno-frontend)
 
-#### [4.2]
+ * ### [4.2 Para la API](#entorno-api)
 
-### [5. Ejecutar la aplicación]
+### [5. Ejecutar la aplicación](#run)
 
-## <a id="introduccion"></a>1. Introducción
+## {#introduccion}1. Introducción
 
 El presente proyecto fue desarrollado durante trabajo de titulo de ingeniería civil informática.
 
@@ -26,22 +26,24 @@ y unidas en un tercer repositorio (este repositorio) mediante gitsubmodule, que 
 repositorios independientes, también contiene un archivo docker-compose.yml y .env.example (utilizado
 para generar el archivo .env) que permitirán ejecutar el sistema de forma automática.
 
-## 2. Prerrequisitos
+## <a id="prerrequisitos"></a>2. Prerrequisitos
 
 El sistema ha sido probado en SO Windows 11.
 
 * Docker Desktop con Servidor WSL 2. Ver documentación sobre [Docker Desktop para Windows](https://docs.docker.com/desktop/install/windows-install/)
 
-## 3. Descargar el repositorio
+## <a id="descarga"></a>3. Descargar el repositorio
 
-Para descargar el repositorio use: `git clone --recurse-submodules git@github.com:cristopher1/app_colmena_abeja.git`
+Para descargar el repositorio use:
+    
+    git clone --recurse-submodules git@github.com:cristopher1/app_colmena_abeja.git
 
-## 4. Variables de entorno
+## <a id="entorno"></a>4. Variables de entorno
 
 La información de las variables de entorno se encuentra dentro del archivo .env.example, este archivo
 tiene 8 variables.
 
-### 4.1 Para el FRONTEND
+### <a id="entorno-frontend"></a>4.1 Para el FRONTEND
 
 FRONTEND_PROJECT_DIRECTORY: Nombre de la carpeta que contiene el FRONTEND y en su raíz esta el
 archivo Dockerfile. Debería llamarse **frontend_app_colmena_abeja**
@@ -52,7 +54,7 @@ FRONTEND_HOST_PORT: Puerto en el HOST, donde el FRONTEND escucha peticiones
 
 FRONTEND_CONTAINER_PORT: Puerto en el contenedor, donde el FRONTEND escucha peticiones
 
-### 4.2 Para la API
+### <a id="entorno-api"></a>4.2 Para la API
 
 API_PROJECT_DIRECTORY: Nombre de la carpeta que contiene la API y en su raíz esta el
 archivo Dockerfile. Debería llamarse **api_colmena_abeja**
@@ -63,7 +65,7 @@ API_HOST_PORT: Puerto en el HOST, donde la API escucha peticiones
 
 API_CONTAINER_PORT: Puerto en el contenedor, donde la API escucha peticiones
 
-## 5. Ejecutar la aplicación
+## <a id="run"></a>5. Ejecutar la aplicación
 
 Para ejecutar la aplicación siga los siguientes pasos.
 
