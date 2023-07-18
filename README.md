@@ -56,6 +56,10 @@ archivo Dockerfile. Debería llamarse **frontend_app_colmena_abeja**
 
 * `FRONTEND_CONTAINER_PORT`: Puerto en el contenedor, donde el FRONTEND escucha peticiones
 
+A continuación se presenta los valores con los que estas variables vienen configuradas en el archivo .env.example
+
+https://github.com/cristopher1/app_colmena_abeja/blob/23bea7412bc6b070c52e0b026cf7102eb3c47060/.env.example#L7-L22
+
 ### [Para la API](#entorno-api)
 
 * `API_PROJECT_DIRECTORY`: Nombre de la carpeta que contiene la API y en su raíz esta el
@@ -66,6 +70,10 @@ archivo Dockerfile. Debería llamarse **api_colmena_abeja**
 * `API_HOST_PORT`: Puerto en el HOST, donde la API escucha peticiones
 
 * `API_CONTAINER_PORT`: Puerto en el contenedor, donde la API escucha peticiones
+
+A continuación se presenta los valores con los que estas variables vienen configuradas en el archivo .env.example
+
+https://github.com/cristopher1/app_colmena_abeja/blob/23bea7412bc6b070c52e0b026cf7102eb3c47060/.env.example#L24-L39
 
 ## [Ejecutar la aplicación](#run)
 
