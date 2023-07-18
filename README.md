@@ -1,5 +1,7 @@
 # [APP COLMENA ABEJA](#indice)
 
+El presente proyecto fue desarrollado durante trabajo de titulo de ingeniería civil informática.
+
 ### <a id="indice"></a>Índice
 
 * <a id="introduccion"></a>[Introducción](#Introducción)
@@ -11,8 +13,6 @@
 * <a id="run"></a>[Ejecutar la aplicación](#Ejecutar-la-aplicación)
 
 ## [Introducción](#introduccion)
-
-El presente proyecto fue desarrollado durante trabajo de titulo de ingeniería civil informática.
 
 El presente repositorio tiene como finalidad almacenar las herramientas que permiten automzatizar el
 despliegue del sistema. El sistema se divide en un frontend y una API (almacenadas en repositorios independientes)
