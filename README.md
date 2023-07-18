@@ -1,3 +1,4 @@
+<style> body { text-aling: justify; } </style>
 # [APP COLMENA ABEJA](#indice)
 
 El presente proyecto fue desarrollado durante el ramo **trabajo de titulo**, para optar al titulo de **ingenierío civil informático** en la Universidad Técnica Federico Santa María (UTFSM).
@@ -14,13 +15,11 @@ El presente proyecto fue desarrollado durante el ramo **trabajo de titulo**, par
 
 ## [Introducción](#introduccion)
 
-<p style="{ text-aling: justify }">
 El presente repositorio tiene como finalidad almacenar las herramientas que permiten automzatizar el
 despliegue del sistema. El sistema se divide en un frontend y una API (almacenadas en repositorios independientes)
 y unidas en un tercer repositorio (este repositorio) mediante gitsubmodule, que además de juntar los dos
 repositorios independientes, también contiene un archivo docker-compose.yml y .env.example (utilizado
 para generar el archivo .env) que permitirán ejecutar el sistema de forma automática.
-</p>
 
 ## [Prerrequisitos](#prerrequisitos)
 
