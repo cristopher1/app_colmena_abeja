@@ -1,4 +1,4 @@
-# Documentación del proyecto APP COLMENA ABEJA
+# APP COLMENA ABEJA
 
 ## Índice
 
