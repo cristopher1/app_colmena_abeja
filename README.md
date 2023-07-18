@@ -16,7 +16,7 @@
 
 ### [5. Ejecutar la aplicación](#run)
 
-## 1. Introducción {#introduccion}
+## <a id="introduccion"></a>1. Introducción
 
 El presente proyecto fue desarrollado durante trabajo de titulo de ingeniería civil informática.
 
@@ -45,34 +45,34 @@ tiene 8 variables.
 
 ### <a id="entorno-frontend"></a>4.1 Para el FRONTEND
 
-FRONTEND_PROJECT_DIRECTORY: Nombre de la carpeta que contiene el FRONTEND y en su raíz esta el
+* `FRONTEND_PROJECT_DIRECTORY`: Nombre de la carpeta que contiene el FRONTEND y en su raíz esta el
 archivo Dockerfile. Debería llamarse **frontend_app_colmena_abeja**
 
-FRONTEND_STAGE: Modo en el que se desplegará el FRONTEND. development o production
+* `FRONTEND_STAGE`: Modo en el que se desplegará el FRONTEND. development o production
 
-FRONTEND_HOST_PORT: Puerto en el HOST, donde el FRONTEND escucha peticiones
+* `FRONTEND_HOST_PORT`: Puerto en el HOST, donde el FRONTEND escucha peticiones
 
-FRONTEND_CONTAINER_PORT: Puerto en el contenedor, donde el FRONTEND escucha peticiones
+* `FRONTEND_CONTAINER_PORT`: Puerto en el contenedor, donde el FRONTEND escucha peticiones
 
 ### <a id="entorno-api"></a>4.2 Para la API
 
-API_PROJECT_DIRECTORY: Nombre de la carpeta que contiene la API y en su raíz esta el
+* `API_PROJECT_DIRECTORY`: Nombre de la carpeta que contiene la API y en su raíz esta el
 archivo Dockerfile. Debería llamarse **api_colmena_abeja**
 
-API_STAGE: Modo en el que se desplegará la API. development o production
+* `API_STAGE`: Modo en el que se desplegará la API. development o production
 
-API_HOST_PORT: Puerto en el HOST, donde la API escucha peticiones
+* `API_HOST_PORT`: Puerto en el HOST, donde la API escucha peticiones
 
-API_CONTAINER_PORT: Puerto en el contenedor, donde la API escucha peticiones
+* `API_CONTAINER_PORT`: Puerto en el contenedor, donde la API escucha peticiones
 
 ## <a id="run"></a>5. Ejecutar la aplicación
 
 Para ejecutar la aplicación siga los siguientes pasos.
 
-**Nota: Los archivos Dockerfile presentes en el repositorio api_colmena_abeja y frontend_app_colmena_abeja utilizan**
+* **Nota: Los archivos Dockerfile presentes en el repositorio api_colmena_abeja y frontend_app_colmena_abeja utilizan**
 **Multi-stage, por lo que no debe olvidar habilitar el docker BuildKit al momento de ejecutar la aplicación.**
 
-**Nota: A partir de la versión 23.0 de Docker Desktop y Docker Engine se usa de forma predeterminada el BuildKit**
+* **Nota: A partir de la versión 23.0 de Docker Desktop y Docker Engine se usa de forma predeterminada el BuildKit**
 **Por lo que no es necesario habilitarlo de forma manual.**
 
 1. Ingrese a la carpeta app_colmena_abeja.
