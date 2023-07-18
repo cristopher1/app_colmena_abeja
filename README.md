@@ -15,28 +15,28 @@ reina dentro de dicha colmena.
   * <a id="entorno-api"></a>[Para la API](#Para-la-API)
 * <a id="run"></a>[Ejecutar la aplicación](#Ejecutar-la-aplicación)
 
-## [Introducción](#introduccion)
+## <a id="Introducción"></a> [Introducción](#introduccion)
 
 El presente repositorio tiene como finalidad almacenar las herramientas que permiten automzatizar el despliegue del sistema. El sistema se divide en un frontend 
 y una API (almacenadas en repositorios independientes) y unidas en un tercer repositorio (este repositorio) mediante gitsubmodule, que además de juntar los dos 
 repositorios independientes, también contiene un archivo docker-compose.yml y .env.example (utilizado para generar el archivo .env) que permitirán ejecutar el 
 sistema de forma automática.
 
-## [Prerrequisitos](#prerrequisitos)
+## <a id="Prerrequisitos"></a> [Prerrequisitos](#prerrequisitos)
 
 El sistema ha sido probado en SO Windows 11.
 
 * Docker Desktop con Servidor WSL 2. Ver documentación sobre [Docker Desktop para Windows](https://docs.docker.com/desktop/install/windows-install/)
 
-## [Descargar el repositorio](#descarga)
+## <a id="Descargar-el-repositorio"></a> [Descargar el repositorio](#descarga)
 
 Para descargar el repositorio use:
 
-```python
+```console
 git clone --recurse-submodules git@github.com:cristopher1/app_colmena_abeja.git
 ```
 
-## [Variables de entorno](#entorno)
+## <a id="Variables-de-entorno"></a> [Variables de entorno](#entorno)
 
 La información de las variables de entorno se encuentra dentro del archivo .env.example, este archivo tiene 8 variables, que son usadas dentro del archivo
 docker-compose.yml para establecer la forma en que se va a desplegar el sistema. A continuación se muestra su estructura.
@@ -45,7 +45,7 @@ https://github.com/cristopher1/app_colmena_abeja/blob/9bb1a74002ca747bb5d142e7fb
 
 A continuación se muestran las variables de entorno usadas en el archivo docker-compose.yml presentado anteriormente.
 
-### [Para el FRONTEND](#entorno-frontend)
+### <a id="Para-el-FRONTEND"></a> [Para el FRONTEND](#entorno-frontend)
 
 https://github.com/cristopher1/app_colmena_abeja/blob/23bea7412bc6b070c52e0b026cf7102eb3c47060/.env.example#L7-L22
 
@@ -58,7 +58,7 @@ archivo Dockerfile. Debería llamarse **frontend_app_colmena_abeja**
 
 * `FRONTEND_CONTAINER_PORT`: Puerto en el contenedor, donde el FRONTEND escucha peticiones
 
-### [Para la API](#entorno-api)
+### <a id="Para-la-API"></a> [Para la API](#entorno-api)
 
 https://github.com/cristopher1/app_colmena_abeja/blob/23bea7412bc6b070c52e0b026cf7102eb3c47060/.env.example#L24-L39
 
@@ -71,7 +71,7 @@ archivo Dockerfile. Debería llamarse **api_colmena_abeja**
 
 * `API_CONTAINER_PORT`: Puerto en el contenedor, donde la API escucha peticiones
 
-## [Ejecutar la aplicación](#run)
+## <a id="Ejecutar-la-aplicación"></a> [Ejecutar la aplicación](#run)
 
 Para ejecutar la aplicación siga los siguientes pasos.
 
@@ -79,7 +79,7 @@ Para ejecutar la aplicación siga los siguientes pasos.
 **Multi-stage, por lo que no debe olvidar habilitar el docker BuildKit al momento de ejecutar la aplicación.**
 
 * **Nota: A partir de la versión 23.0 de Docker Desktop y Docker Engine se usa de forma predeterminada el BuildKit**
-**Por lo que no es necesario habilitarlo de forma manual.**
+**por lo que no es necesario habilitarlo de forma manual.**
 
 1. Ingrese a la carpeta app_colmena_abeja.
 2. Cree un archivo llamado .env (en la misma carpeta donde esta el archivo .env.example)
@@ -89,5 +89,8 @@ Para ejecutar la aplicación siga los siguientes pasos.
 6. Abra una terminal
 7. Desde la terminal, ingrese a la carpeta app_colmena_abeja
 8. Ejecute el comando `docker-compose up --build`
+
+**Nota: En modo producción no exponga directamente el contenedor api_colmena_abeja, en su lugar use un servidor de producción como nginx para redirigir**
+**las peticiones web al contenedor api_colmena_abeja.**
 
 Una vez completados los pasos, el sistema debería estar ejecutandose en `http://localhost:${FROTEND_HOST_PORT}`
