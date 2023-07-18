@@ -18,9 +18,9 @@ reina dentro de dicha colmena.
 ## <a id="Introducción"></a> [Introducción](#introduccion)
 
 El presente repositorio tiene como finalidad almacenar las herramientas que permiten automzatizar el despliegue del sistema. El sistema se divide en un frontend 
-y una API (almacenadas en repositorios independientes) y unidas en un tercer repositorio (este repositorio) mediante git-submodule, que además de juntar los dos 
-repositorios independientes, también contiene un archivo docker-compose.yml y .env.example (utilizado para generar el archivo .env) que permitirán ejecutar el 
-sistema de forma automática.
+y una API (almacenadas en repositorios independientes) y unidas en un tercer repositorio (este repositorio) mediante git-submodule. Este repositorio además de
+juntar los dos repositorios independientes, también contiene un archivo docker-compose.yml y .env.example (utilizado para generar el archivo .env) que permitirán
+ejecutar el sistema de forma automática.
 
 ## <a id="Prerrequisitos"></a> [Prerrequisitos](#prerrequisitos)
 
