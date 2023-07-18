@@ -35,8 +35,10 @@ El sistema ha sido probado en SO Windows 11.
 ## <a id="descarga"></a>3. Descargar el repositorio
 
 Para descargar el repositorio use:
-    
-    git clone --recurse-submodules git@github.com:cristopher1/app_colmena_abeja.git
+
+```python
+git clone --recurse-submodules git@github.com:cristopher1/app_colmena_abeja.git
+```
 
 ## <a id="entorno"></a>4. Variables de entorno
 
