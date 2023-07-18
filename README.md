@@ -2,7 +2,7 @@
 
 ## Índice
 
-### [1. Introducción](#1. introducción)
+### [1. Introducción](introducción)
 
 ### [2. Prerrequisitos]
 
