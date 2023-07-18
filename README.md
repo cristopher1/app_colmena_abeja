@@ -2,21 +2,15 @@
 
 ## Índice
 
-### [1. Introducción](#introduccion)
+* [Introducción](#Introducción)
+* [Prerrequisitos](#prerrequisitos)
+* [Descargar el repositorio](#descarga)
+* [Variables de entorno](#entorno)
+  * [Para el FRONTEND](#entorno-frontend)
+  * [Para la API](#entorno-api)
+* [Ejecutar la aplicación](#run)
 
-### [2. Prerrequisitos](#prerrequisitos)
-
-### [3. Descargar el repositorio](#descarga)
-
-### [4. Variables de entorno](#entorno)
-
- * ### [4.1 Para el FRONTEND](#entorno-frontend)
-
- * ### [4.2 Para la API](#entorno-api)
-
-### [5. Ejecutar la aplicación](#run)
-
-## <a id="introduccion"></a>1. Introducción
+## Introducción
 
 El presente proyecto fue desarrollado durante trabajo de titulo de ingeniería civil informática.
 
