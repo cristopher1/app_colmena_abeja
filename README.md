@@ -41,29 +41,7 @@ git clone --recurse-submodules git@github.com:cristopher1/app_colmena_abeja.git
 La información de las variables de entorno se encuentra dentro del archivo .env.example, este archivo tiene 8 variables, que son usadas dentro del archivo
 docker-compose.yml para establecer la forma en que se va a desplegar el sistema. A continuación se muestra su estructura.
 
-```yaml
-version: '3.4'
-
-services:
-  frontend:
-    build:
-      context: ${FRONTEND_PROJECT_DIRECTORY}
-      target: ${FRONTEND_STAGE}
-    env_file:
-      - ${FRONTEND_PROJECT_DIRECTORY}/.env
-    environment:
-      - VUE_APP_API_PORT=${API_HOST_PORT}
-    ports:
-      - "${FRONTEND_HOST_PORT}:${FRONTEND_CONTAINER_PORT}"
-  api:
-    build:
-      context: ${API_PROJECT_DIRECTORY}
-      target: ${API_STAGE}
-    env_file:
-      - ${API_PROJECT_DIRECTORY}/api/.env
-    ports:
-      - "${API_HOST_PORT}:${API_CONTAINER_PORT}"
-```
+https://github.com/cristopher1/app_colmena_abeja/blob/9bb1a74002ca747bb5d142e7fb5a44329cb35d2c/docker-compose.yml#L1-L21
 
 A continuación se muestran las variables de entorno usadas en el archivo docker-compose.yml presentado anteriormente.
 
