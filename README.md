@@ -100,7 +100,7 @@ Para ejecutar la aplicación siga los siguientes pasos.
 **Por lo que no es necesario habilitarlo de forma manual.**
 
 1. Ingrese a la carpeta app_colmena_abeja.
-2. Cree un archivo llamado .env
+2. Cree un archivo llamado .env (en la misma carpeta donde esta el archivo .env.example)
 3. Copie el contenido del archivo .env.example a .env
 4. Si gusta, modifique los valores del archivo .env
 5. Repita el paso 2, 3 y 4 en api_colmena_abeja y frontend_app_colmena_abeja
