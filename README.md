@@ -3,12 +3,12 @@
 ## Índice
 
 * [Introducción](#Introducción)
-* [Prerrequisitos](#prerrequisitos)
-* [Descargar el repositorio](#descarga)
-* [Variables de entorno](#entorno)
-  * [Para el FRONTEND](#entorno-frontend)
-  * [Para la API](#entorno-api)
-* [Ejecutar la aplicación](#run)
+* [Prerrequisitos](#Prerrequisitos)
+* [Descargar el repositorio](#Descargar-el-repositorio)
+* [Variables de entorno](#Variables-de-entorno)
+  * [Para el FRONTEND](#Para-el-FRONTEND)
+  * [Para la API](#Para-la-API)
+* [Ejecutar la aplicación](#Ejecutar-la-aplicación)
 
 ## Introducción
 
@@ -20,13 +20,13 @@ y unidas en un tercer repositorio (este repositorio) mediante gitsubmodule, que 
 repositorios independientes, también contiene un archivo docker-compose.yml y .env.example (utilizado
 para generar el archivo .env) que permitirán ejecutar el sistema de forma automática.
 
-## <a id="prerrequisitos"></a>2. Prerrequisitos
+## Prerrequisitos
 
 El sistema ha sido probado en SO Windows 11.
 
 * Docker Desktop con Servidor WSL 2. Ver documentación sobre [Docker Desktop para Windows](https://docs.docker.com/desktop/install/windows-install/)
 
-## <a id="descarga"></a>3. Descargar el repositorio
+## Descargar el repositorio
 
 Para descargar el repositorio use:
 
@@ -34,12 +34,12 @@ Para descargar el repositorio use:
 git clone --recurse-submodules git@github.com:cristopher1/app_colmena_abeja.git
 ```
 
-## <a id="entorno"></a>4. Variables de entorno
+## Variables de entorno
 
 La información de las variables de entorno se encuentra dentro del archivo .env.example, este archivo
 tiene 8 variables.
 
-### <a id="entorno-frontend"></a>4.1 Para el FRONTEND
+### Para el FRONTEND
 
 * `FRONTEND_PROJECT_DIRECTORY`: Nombre de la carpeta que contiene el FRONTEND y en su raíz esta el
 archivo Dockerfile. Debería llamarse **frontend_app_colmena_abeja**
@@ -50,7 +50,7 @@ archivo Dockerfile. Debería llamarse **frontend_app_colmena_abeja**
 
 * `FRONTEND_CONTAINER_PORT`: Puerto en el contenedor, donde el FRONTEND escucha peticiones
 
-### <a id="entorno-api"></a>4.2 Para la API
+### Para la API
 
 * `API_PROJECT_DIRECTORY`: Nombre de la carpeta que contiene la API y en su raíz esta el
 archivo Dockerfile. Debería llamarse **api_colmena_abeja**
@@ -61,7 +61,7 @@ archivo Dockerfile. Debería llamarse **api_colmena_abeja**
 
 * `API_CONTAINER_PORT`: Puerto en el contenedor, donde la API escucha peticiones
 
-## <a id="run"></a>5. Ejecutar la aplicación
+## Ejecutar la aplicación
 
 Para ejecutar la aplicación siga los siguientes pasos.
 
