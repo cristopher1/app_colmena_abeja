@@ -1,6 +1,6 @@
 # [APP COLMENA ABEJA](#indice)
 
-El presente proyecto fue desarrollado durante trabajo de titulo de ingeniería civil informática.
+El presente proyecto fue desarrollado durante el ramo **trabajo de titulo**, para optar al titulo de **ingenierío civil informático** en la Universidad Técnica Federico Santa María (UTFSM).
 
 ### <a id="indice"></a>Índice
 
