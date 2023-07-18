@@ -14,7 +14,10 @@ El presente proyecto fue desarrollado durante el ramo **trabajo de titulo**, par
 
 ## [Introducción](#introduccion)
 
-El presente repositorio tiene como finalidad almacenar las herramientas que permiten automzatizar el despliegue del sistema. El sistema se divide en un frontend y una API (almacenadas en repositorios independientes) y unidas en un tercer repositorio (este repositorio) mediante gitsubmodule, que además de juntar los dos repositorios independientes, también contiene un archivo docker-compose.yml y .env.example (utilizado para generar el archivo .env) que permitirán ejecutar el sistema de forma automática.
+El presente repositorio tiene como finalidad almacenar las herramientas que permiten automzatizar el despliegue del sistema. El sistema se divide en un frontend 
+y una API (almacenadas en repositorios independientes) y unidas en un tercer repositorio (este repositorio) mediante gitsubmodule, que además de juntar los dos 
+repositorios independientes, también contiene un archivo docker-compose.yml y .env.example (utilizado para generar el archivo .env) que permitirán ejecutar el 
+sistema de forma automática.
 
 ## [Prerrequisitos](#prerrequisitos)
 
@@ -32,8 +35,34 @@ git clone --recurse-submodules git@github.com:cristopher1/app_colmena_abeja.git
 
 ## [Variables de entorno](#entorno)
 
-La información de las variables de entorno se encuentra dentro del archivo .env.example, este archivo
-tiene 8 variables.
+La información de las variables de entorno se encuentra dentro del archivo .env.example, este archivo tiene 8 variables, que son usadas dentro del archivo
+docker-compose.yml para establecer la forma en que se va a desplegar el sistema. A continuación se muestra su estructura.
+
+```yaml
+version: '3.4'
+
+services:
+  frontend:
+    build:
+      context: ${FRONTEND_PROJECT_DIRECTORY}
+      target: ${FRONTEND_STAGE}
+    env_file:
+      - ${FRONTEND_PROJECT_DIRECTORY}/.env
+    environment:
+      - VUE_APP_API_PORT=${API_HOST_PORT}
+    ports:
+      - "${FRONTEND_HOST_PORT}:${FRONTEND_CONTAINER_PORT}"
+  api:
+    build:
+      context: ${API_PROJECT_DIRECTORY}
+      target: ${API_STAGE}
+    env_file:
+      - ${API_PROJECT_DIRECTORY}/api/.env
+    ports:
+      - "${API_HOST_PORT}:${API_CONTAINER_PORT}"
+```
+
+A continuación se muestran las variables de entorno usadas en el archivo docker-compose.yml presentado anteriormente.
 
 ### [Para el FRONTEND](#entorno-frontend)
 
